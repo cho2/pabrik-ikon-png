@@ -16,9 +16,7 @@ Letakkan skrip pada posisi berikut
 
 NamaIkon
    |
-
    |__ index.theme
-
    |__ icon-theme.cache
 
    |__ pabrik-ikon-png.sh
