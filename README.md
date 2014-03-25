@@ -3,7 +3,7 @@ pabrik-ikon-png
 
 Dependensi : inkscape
 
-Skrip bash untuk bikin ikon-ikon png dalam ukuran yang berbeda-beda sebelum dipaketkan, menghasilkan ukuran berikut :
+Skrip bash untuk mengkonversi ikon SVG ke format PNG dalam ukuran yang berbeda-beda sesuai standar tema ikon sebelum dipaketkan, menghasilkan ukuran-ukuran berikut :
 - 16
 - 22
 - 24
