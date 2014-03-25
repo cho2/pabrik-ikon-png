@@ -3,7 +3,7 @@ pabrik-ikon-png
 
 Dependensi : inkscape
 
-Skrip untuk bikin ikon-ikon png dalam ukuran yang berbeda-beda sebelum dipaketkan, menghasilkan ukuran berikut :
+Skrip bash untuk bikin ikon-ikon png dalam ukuran yang berbeda-beda sebelum dipaketkan, menghasilkan ukuran berikut :
 - 16
 - 22
 - 24
