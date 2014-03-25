@@ -34,7 +34,7 @@ do
   name=${file%%.svg}
   inkscape $name.svg --export-png=$name.png --export-height=${size[x]} --export-width=${size[x]}
   mv $name.png ${size[x]}/
-  jumlah=jumlah+1
+  jumlah=$((jumlah+1))
 done
 cp -vR ${size[x]} ..
 rm -rf ${size[x]}
