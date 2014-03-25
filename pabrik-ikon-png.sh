@@ -19,26 +19,26 @@ size[5]='64'
 size[6]='96'
 jumlah=0
 pwd=$('pwd')
-echo "$pwd"
 for i in 0 1 2 3 4 5 6 7 8 9
 do
-cd ${icon[i]}/scalable/
+cd ${icon[i]}/
 for x in 0 1 2 3 4 5 6
 do
 rm -rf ${size[x]}
 mkdir ${size[x]}
+cd scalable/
 SAVEIF=$IFS
 IFS=$(echo -en "\n\b")
 for file in $(ls *svg)
 do
   name=${file%%.svg}
   inkscape $name.svg --export-png=$name.png --export-height=${size[x]} --export-width=${size[x]}
-  mv $name.png ${size[x]}/
+  mv $name.png $pwd/${icon[i]}/${size[x]}/
   jumlah=$((jumlah+1))
 done
-cp -vR ${size[x]} ..
-rm -rf ${size[x]}
+cd $pwd/${icon[i]}/
 done
 cd $pwd
 done
+rm -rf 16 22 24 32 48 64 96
 echo "Done. $jumlah icons was generated."
